@@ -1,5 +1,5 @@
 {
-  "name": "web_socket_server",
+  "name": "node_service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,7 +26,6 @@
     "jsdoc": "^4.0.4"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "debug": "^4.3.7",
     "dotenv": "^16.4.5",
@@ -39,7 +38,6 @@
     "mysql2": "^3.11.4",
     "sequelize": "^6.37.5",
     "sequelize-cli": "^6.6.2",
-    "socket.io": "^4.8.1",
     "uuid": "^11.0.3"
   }
 }

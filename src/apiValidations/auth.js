@@ -6,7 +6,7 @@ import Joi from 'joi';
  * @property {string} email - The email address of the user (must be a valid email, required).
  * @property {string} password - The password for the user account (required).
  */
-const signup = {
+const test = {
   body: Joi.object({
     name: Joi.string().required(),
     email: Joi.string().email().required(),
@@ -14,23 +14,6 @@ const signup = {
   }),
 };
 
-/**
- * @typedef {Object} LoginSchema
- * @property {string} email - The email address of the user (must be a valid email, required).
- * @property {string} password - The password for the user account (required).
- */
-const login = {
-  body: Joi.object({
-    email: Joi.string().email().required(),
-    password: Joi.string().required(),
-  }),
-};
-
-/**
- * Authentication schema definitions for validating request payloads.
- * @type {{signup: SignupSchema, login: LoginSchema}}
- */
 export const authSchema = {
-  signup,
-  login,
+  test,
 };
