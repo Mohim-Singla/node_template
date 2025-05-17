@@ -9,6 +9,7 @@ import { responseHandler } from './middleware/responseHandler.js';
 import { debugLogger } from './middleware/debug.js';
 import { mongoConnection } from './db/mongo/connection/index.js';
 import { mysqlConnection } from './db/mysql/connection/index.js';
+import http from 'http';
 
 const app = express();
 const server = http.createServer(app);
